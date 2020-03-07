@@ -1,6 +1,6 @@
 {
   "name": "nike-product-display",
-  "version": "1",
+  "version": "",
   "description": "Nike FEC Senior Phase Hack Reactor App",
   "author": "Abraham Esparza",
   "license": "",
@@ -8,6 +8,7 @@
     "node": ">=6.13.0"
   },
   "scripts": {
+    "server": "nodemon server/index.js",
     "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
