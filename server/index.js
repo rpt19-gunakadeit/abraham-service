@@ -2,8 +2,9 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const bodyParser = require('body-parser');
+const db = require('../database/index');
 
-app.use(express.static('public'))
+app.use(express.static('client/dist'))
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
