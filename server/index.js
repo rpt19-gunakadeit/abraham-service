@@ -12,6 +12,21 @@ app.get('/', (req, res) => {
   res.status(200).send('OK');
 });
 
+//get request to retrieve small images for thumbnails
+app.get('/small', (req, res) => {
+  res.status(200).send('OK');
+});
+
+//get request to retrieve medium images for static images rendering to dom
+app.get('/medium', (req, res) => {
+  res.status(200).send('OK');
+});
+
+//get request to retrieve large images when user clicks on medium size image
+app.get('/large', (req, res) => {
+  res.status(200).send('OK');
+});
+
 app.listen(port, () => {
   console.log(`listening on port ${port}!`);
 })
