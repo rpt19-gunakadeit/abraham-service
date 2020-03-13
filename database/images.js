@@ -252,111 +252,111 @@ let mediumImages = [
 let largeImages = [
   {
     "url":"https://picsum.photos/id/0/500/750",
-    "id":"0"
+    "styleId":"0"
   },
   {
     "url":"https://picsum.photos/id/1/500/750",
-    "id":"1"
+    "styleId":"1"
   },
   {
     "url":"https://picsum.photos/id/10/500/750",
-    "id":"10"
+    "styleId":"10"
   },
   {
     "url":"https://picsum.photos/id/100/500/750",
-    "id":"100"
+    "styleId":"100"
   },
   {
     "url":"https://picsum.photos/id/1000/500/750",
-    "id":"1000"
+    "styleId":"1000"
   },
   {
     "url":"https://picsum.photos/id/1001/500/750",
-    "id":"1001"
+    "styleId":"1001"
   },
   {
     "url":"https://picsum.photos/id/1002/500/750",
-    "id":"1002"
+    "styleId":"1002"
   },
   {
     "url":"https://picsum.photos/id/1003/500/750",
-    "id":"1003"
+    "styleId":"1003"
   },
   {
     "url":"https://picsum.photos/id/1004/500/750",
-    "id":"1004"
+    "styleId":"1004"
   },
   {
     "url":"https://picsum.photos/id/1005/500/750",
-    "id":"1005"
+    "styleId":"1005"
   },
   {
     "url":"https://picsum.photos/id/1006/500/750",
-    "id":"1006"
+    "styleId":"1006"
   },
   {
     "url":"https://picsum.photos/id/1008/500/750",
-    "id":"1008"
+    "styleId":"1008"
   },
   {
     "url":"https://picsum.photos/id/1009/500/750",
-    "id":"1009"
+    "styleId":"1009"
   },
   {
     "url":"https://picsum.photos/id/101/500/750",
-    "id":"101"
+    "styleId":"101"
   },
   {
     "url":"https://picsum.photos/id/1010/500/750",
-    "id":"1010"
+    "styleId":"1010"
   },
   {
     "url":"https://picsum.photos/id/1011/500/750",
-    "id":"1011"
+    "styleId":"1011"
   },
   {
     "url":"https://picsum.photos/id/1012/500/750",
-    "id":"1012"
+    "styleId":"1012"
   },
   {
     "url":"https://picsum.photos/id/1013/500/750",
-    "id":"1013"
+    "styleId":"1013"
   },
   {
     "url":"https://picsum.photos/id/1014/500/750",
-    "id":"1014"
+    "styleId":"1014"
   },
   {
     "url":"https://picsum.photos/id/1015/500/750",
-    "id":"1015"
+    "styleId":"1015"
   },
   {
     "url":"https://picsum.photos/id/1016/500/750",
-    "id":"1016"
+    "styleId":"1016"
   },
   {
     "url":"https://picsum.photos/id/1018/500/750",
-    "id":"1018"
+    "styleId":"1018"
   },
   {
     "url":"https://picsum.photos/id/1019/500/750",
-    "id":"1019"
+    "styleId":"1019"
   },
   {
     "url":"https://picsum.photos/id/102/500/750",
-    "id":"102"
+    "styleId":"102"
   },
   {
     "url":"https://picsum.photos/id/1020/500/750",
-    "id":"1020"
+    "styleId":"1020"
   },
   {
     "url":"https://picsum.photos/id/1021/500/750",
-    "id":"1021"
+    "styleId":"1021"
   },
   {
     "url":"https://picsum.photos/id/1022/500/750",
-    "id":"1022"
+    "styleId":"1022"
   },
   {
     "url":"https://picsum.photos/id/1023/500/750",

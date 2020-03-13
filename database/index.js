@@ -17,7 +17,7 @@ connection.connect((err) => {
 //and pass each img url into the database
 let small = images.smallImages;
 // console.log('small: ', small)
-let req = `INSERT INTO small_images (id, smallUrl, styleId) values (?, ?, ?)`;
+let req = `INSERT INTO small_images (id, smallUrl, styleId) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`;
 let postQuery = connection.query(req, small, (err, res, body) => {
   if (err) {
     console.log('Error: ', err);
