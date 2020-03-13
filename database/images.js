@@ -4,369 +4,376 @@ small, medium and large sized images
 */
 let smallImages = [
   {
-    "id":"0",
-    "url":"https://picsum.photos/id/0/60/60"
+    "url":"https://picsum.photos/id/0/60/60",
+    "styleId":"0"
   },
   {
-    "id":"1",
-    "url":"https://picsum.photos/id/1/60/60"
+    "url":"https://picsum.photos/id/1/60/60",
+    "styleId":"1"
   },
   {
-    "id":"10",
-    "url":"https://picsum.photos/id/10/60/60"
+    "url":"https://picsum.photos/id/10/60/60",
+    "styleId":"10"
   },
   {
-    "id":"100",
-    "url":"https://picsum.photos/id/100/60/60"
+    "url":"https://picsum.photos/id/100/60/60",
+    "styleId":"100"
   },
   {
-    "id":"1000",
-    "url":"https://picsum.photos/id/1000/60/60"
+    "url":"https://picsum.photos/id/1000/60/60",
+    "styleId":"1000"
   },
   {
-    "id":"1001",
-    "url":"https://picsum.photos/id/1001/60/60"
+    "url":"https://picsum.photos/id/1001/60/60",
+    "styleId":"1001"
   },
   {
-    "id":"1002",
-    "url":"https://picsum.photos/id/1002/60/60"
+    "url":"https://picsum.photos/id/1002/60/60",
+    "styleId":"1002"
   },
   {
-    "id":"1003",
-    "url":"https://picsum.photos/id/1003/60/60"
+    "url":"https://picsum.photos/id/1003/60/60",
+    "styleId":"1003"
   },
   {
-    "id":"1004",
-    "url":"https://picsum.photos/id/1004/60/60"
+    "url":"https://picsum.photos/id/1004/60/60",
+    "styleId":"1004"
   },
   {
-    "id":"1005",
-    "url":"https://picsum.photos/id/1005/60/60"
+    "url":"https://picsum.photos/id/1005/60/60",
+    "styleId":"1005"
   },
   {
-    "id":"1006",
-    "url":"https://picsum.photos/id/1006/60/60"
+    "url":"https://picsum.photos/id/1006/60/60",
+    "styleId":"1006"
   },
   {
-    "id":"1008",
-    "url":"https://picsum.photos/id/1008/60/60"
+    "url":"https://picsum.photos/id/1008/60/60",
+    "styleId":"1008"
   },
   {
-    "id":"1009",
-    "url":"https://picsum.photos/id/1009/60/60"
+    "url":"https://picsum.photos/id/1009/60/60",
+    "styleId":"1009"
   },
   {
-    "id":"101",
-    "url":"https://picsum.photos/id/101/60/60"
+    "url":"https://picsum.photos/id/101/60/60",
+    "styleId":"101"
   },
   {
-    "id":"1010",
-    "url":"https://picsum.photos/id/1010/60/60"
+    "url":"https://picsum.photos/id/1010/60/60",
+    "styleId":"1010"
   },
   {
-    "id":"1011",
-    "url":"https://picsum.photos/id/1011/60/60"
+    "url":"https://picsum.photos/id/1011/60/60",
+    "styleId":"1011"
   },
   {
-    "id":"1012",
-    "url":"https://picsum.photos/id/1012/60/60"
+    "url":"https://picsum.photos/id/1012/60/60",
+    "styleId":"1012"
   },
   {
-    "id":"1013",
-    "url":"https://picsum.photos/id/1013/60/60"
+    "url":"https://picsum.photos/id/1013/60/60",
+    "styleId":"1013"
   },
   {
-    "id":"1014",
-    "url":"https://picsum.photos/id/1014/60/60"
+    "url":"https://picsum.photos/id/1014/60/60",
+    "styleId":"1014"
   },
   {
-    "id":"1015",
-    "url":"https://picsum.photos/id/1015/60/60"
+    "url":"https://picsum.photos/id/1015/60/60",
+    "styleId":"1015"
   },
   {
-    "id":"1016",
-    "url":"https://picsum.photos/id/1016/60/60"
+    "url":"https://picsum.photos/id/1016/60/60",
+    "styleId":"1016"
   },
   {
-    "id":"1018",
-    "url":"https://picsum.photos/id/1018/60/60"
+    "url":"https://picsum.photos/id/1018/60/60",
+    "styleId":"1018"
   },
   {
-    "id":"1019",
-    "url":"https://picsum.photos/id/1019/60/60"
+    "url":"https://picsum.photos/id/1019/60/60",
+    "styleId":"1019"
   },
   {
-    "id":"102",
-    "url":"https://picsum.photos/id/102/60/60"
+    "url":"https://picsum.photos/id/102/60/60",
+    "styleId":"102"
   },
   {
-    "id":"1020",
-    "url":"https://picsum.photos/id/1020/60/60"
+    "url":"https://picsum.photos/id/1020/60/60",
+    "styleId":"1020"
   },
   {
-    "id":"1021",
-    "url":"https://picsum.photos/id/1021/60/60"
+    "url":"https://picsum.photos/id/1021/60/60",
+    "styleId":"1021"
   },
   {
-    "id":"1022",
-    "url":"https://picsum.photos/id/1022/60/60"
+    "url":"https://picsum.photos/id/1022/60/60",
+    "styleId":"1022"
   },
   {
-    "id":"1023",
-    "url":"https://picsum.photos/id/1023/60/60"
+    "url":"https://picsum.photos/id/1023/60/60",
+    "styleId":"1023"
   },
   {
-    "id":"1024",
-    "url":"https://picsum.photos/id/1024/60/60"
+    "url":"https://picsum.photos/id/1024/60/60",
+    "styleId":"1024"
   },
   {
-    "id":"1025",
-    "url":"https://picsum.photos/id/1025/60/60"
+    "url":"https://picsum.photos/id/1025/60/60",
+    "styleId":"1025"
   }
 ]
 
+
 let mediumImages = [
   {
-    "id":"0",
-    "url":"https://picsum.photos/id/0/350/500"
+    "url":"https://picsum.photos/id/0/350/500",
+    "styleId":"0"
   },
   {
-    "id":"1",
-    "url":"https://picsum.photos/id/1/350/500"
+    "url":"https://picsum.photos/id/1/350/500",
+    "styleId":"1"
   },
   {
-    "id":"10",
-    "url":"https://picsum.photos/id/10/350/500"
+    "url":"https://picsum.photos/id/10/350/500",
+    "styleId":"10"
   },
   {
-    "id":"100",
-    "url":"https://picsum.photos/id/100/350/500"
+    "url":"https://picsum.photos/id/100/350/500",
+    "styleId":"100"
   },
   {
-    "id":"1000",
-    "url":"https://picsum.photos/id/1000/350/500"
+    "url":"https://picsum.photos/id/1000/350/500",
+    "styleId":"1000"
   },
   {
-    "id":"1001",
-    "url":"https://picsum.photos/id/1001/350/500"
+    "url":"https://picsum.photos/id/1001/350/500",
+    "styleId":"1001"
   },
   {
-    "id":"1002",
-    "url":"https://picsum.photos/id/1002/350/500"
+    "url":"https://picsum.photos/id/1002/350/500",
+    "styleId":"1002"
   },
   {
-    "id":"1003",
-    "url":"https://picsum.photos/id/1003/350/500"
+    "url":"https://picsum.photos/id/1003/350/500",
+    "styleId":"1003"
   },
   {
-    "id":"1004",
-    "url":"https://picsum.photos/id/1004/350/500"
+    "url":"https://picsum.photos/id/1004/350/500",
+    "styleId":"1004"
   },
   {
-    "id":"1005",
-    "url":"https://picsum.photos/id/1005/350/500"
+    "url":"https://picsum.photos/id/1005/350/500",
+    "styleId":"1005"
   },
   {
-    "id":"1006",
-    "url":"https://picsum.photos/id/1006/350/500"
+    "url":"https://picsum.photos/id/1006/350/500",
+    "styleId":"1006"
   },
   {
-    "id":"1008",
-    "url":"https://picsum.photos/id/1008/350/500"
+    "url":"https://picsum.photos/id/1008/350/500",
+    "styleId":"1008"
   },
   {
-    "id":"1009",
-    "url":"https://picsum.photos/id/1009/350/500"
+    "url":"https://picsum.photos/id/1009/350/500",
+    "styleId":"1009"
   },
   {
-    "id":"101",
-    "url":"https://picsum.photos/id/101/350/500"
+    "url":"https://picsum.photos/id/101/350/500",
+    "styleId":"101"
   },
   {
-    "id":"1010",
-    "url":"https://picsum.photos/id/1010/350/500"
+    "url":"https://picsum.photos/id/1010/350/500",
+    "styleId":"1010"
   },
   {
-    "id":"1011",
-    "url":"https://picsum.photos/id/1011/350/500"
+    "url":"https://picsum.photos/id/1011/350/500",
+    "styleId":"1011"
   },
   {
-    "id":"1012",
-    "url":"https://picsum.photos/id/1012/350/500"
+    "url":"https://picsum.photos/id/1012/350/500",
+    "styleId":"1012"
   },
   {
-    "id":"1013",
-    "url":"https://picsum.photos/id/1013/350/500"
+    "url":"https://picsum.photos/id/1013/350/500",
+    "styleId":"1013"
   },
   {
-    "id":"1014",
-    "url":"https://picsum.photos/id/1014/350/500"
+    "url":"https://picsum.photos/id/1014/350/500",
+    "styleId":"1014"
   },
   {
-    "id":"1015",
-    "url":"https://picsum.photos/id/1015/350/500"
+    "url":"https://picsum.photos/id/1015/350/500",
+    "styleId":"1015"
   },
   {
-    "id":"1016",
-    "url":"https://picsum.photos/id/1016/350/500"
+    "url":"https://picsum.photos/id/1016/350/500",
+    "styleId":"1016"
   },
   {
-    "id":"1018",
-    "url":"https://picsum.photos/id/1018/350/500"
+    "url":"https://picsum.photos/id/1018/350/500",
+    "styleId":"1018"
   },
   {
-    "id":"1019",
-    "url":"https://picsum.photos/id/1019/350/500"
+    "url":"https://picsum.photos/id/1019/350/500",
+    "styleId":"1019"
   },
   {
-    "id":"102",
-    "url":"https://picsum.photos/id/102/350/500"
+    "url":"https://picsum.photos/id/102/350/500",
+    "styleId":"102"
   },
   {
-    "id":"1020",
-    "url":"https://picsum.photos/id/1020/350/500"
+    "url":"https://picsum.photos/id/1020/350/500",
+    "styleId":"1020"
   },
   {
-    "id":"1021",
-    "url":"https://picsum.photos/id/1021/350/500"
+    "url":"https://picsum.photos/id/1021/350/500",
+    "styleId":"1021"
   },
   {
-    "id":"1022",
-    "url":"https://picsum.photos/id/1022/350/500"
+    "url":"https://picsum.photos/id/1022/350/500",
+    "styleId":"1022"
   },
   {
-    "id":"1023",
-    "url":"https://picsum.photos/id/1023/350/500"
+    "url":"https://picsum.photos/id/1023/350/500",
+    "styleId":"1023"
   },
   {
-    "id":"1024",
-    "url":"https://picsum.photos/id/1024/350/500"
+    "url":"https://picsum.photos/id/1024/350/500",
+    "styleId":"1024"
   },
   {
-    "id":"1025",
-    "url":"https://picsum.photos/id/1025/350/500"
+    "url":"https://picsum.photos/id/1025/350/500",
+    "styleId":"1025"
   }
 ]
 
 let largeImages = [
   {
-    "id":"0",
-    "url":"https://picsum.photos/id/0/500/750"
+    "url":"https://picsum.photos/id/0/500/750",
+    "id":"0"
   },
   {
-    "id":"1",
-    "url":"https://picsum.photos/id/1/500/750"
+    "url":"https://picsum.photos/id/1/500/750",
+    "id":"1"
   },
   {
-    "id":"10",
-    "url":"https://picsum.photos/id/10/500/750"
+    "url":"https://picsum.photos/id/10/500/750",
+    "id":"10"
   },
   {
-    "id":"100",
-    "url":"https://picsum.photos/id/100/500/750"
+    "url":"https://picsum.photos/id/100/500/750",
+    "id":"100"
   },
   {
-    "id":"1000",
-    "url":"https://picsum.photos/id/1000/500/750"
+    "url":"https://picsum.photos/id/1000/500/750",
+    "id":"1000"
   },
   {
-    "id":"1001",
-    "url":"https://picsum.photos/id/1001/500/750"
+    "url":"https://picsum.photos/id/1001/500/750",
+    "id":"1001"
   },
   {
-    "id":"1002",
-    "url":"https://picsum.photos/id/1002/500/750"
+    "url":"https://picsum.photos/id/1002/500/750",
+    "id":"1002"
   },
   {
-    "id":"1003",
-    "url":"https://picsum.photos/id/1003/500/750"
+    "url":"https://picsum.photos/id/1003/500/750",
+    "id":"1003"
   },
   {
-    "id":"1004",
-    "url":"https://picsum.photos/id/1004/500/750"
+    "url":"https://picsum.photos/id/1004/500/750",
+    "id":"1004"
   },
   {
-    "id":"1005",
-    "url":"https://picsum.photos/id/1005/500/750"
+    "url":"https://picsum.photos/id/1005/500/750",
+    "id":"1005"
   },
   {
-    "id":"1006",
-    "url":"https://picsum.photos/id/1006/500/750"
+    "url":"https://picsum.photos/id/1006/500/750",
+    "id":"1006"
   },
   {
-    "id":"1008",
-    "url":"https://picsum.photos/id/1008/500/750"
+    "url":"https://picsum.photos/id/1008/500/750",
+    "id":"1008"
   },
   {
-    "id":"1009",
-    "url":"https://picsum.photos/id/1009/500/750"
+    "url":"https://picsum.photos/id/1009/500/750",
+    "id":"1009"
   },
   {
-    "id":"101",
-    "url":"https://picsum.photos/id/101/500/750"
+    "url":"https://picsum.photos/id/101/500/750",
+    "id":"101"
   },
   {
-    "id":"1010",
-    "url":"https://picsum.photos/id/1010/500/750"
+    "url":"https://picsum.photos/id/1010/500/750",
+    "id":"1010"
   },
   {
-    "id":"1011",
-    "url":"https://picsum.photos/id/1011/500/750"
+    "url":"https://picsum.photos/id/1011/500/750",
+    "id":"1011"
   },
   {
-    "id":"1012",
-    "url":"https://picsum.photos/id/1012/500/750"
+    "url":"https://picsum.photos/id/1012/500/750",
+    "id":"1012"
   },
   {
-    "id":"1013",
-    "url":"https://picsum.photos/id/1013/500/750"
+    "url":"https://picsum.photos/id/1013/500/750",
+    "id":"1013"
   },
   {
-    "id":"1014",
-    "url":"https://picsum.photos/id/1014/500/750"
+    "url":"https://picsum.photos/id/1014/500/750",
+    "id":"1014"
   },
   {
-    "id":"1015",
-    "url":"https://picsum.photos/id/1015/500/750"
+    "url":"https://picsum.photos/id/1015/500/750",
+    "id":"1015"
   },
   {
-    "id":"1016",
-    "url":"https://picsum.photos/id/1016/500/750"
+    "url":"https://picsum.photos/id/1016/500/750",
+    "id":"1016"
   },
   {
-    "id":"1018",
-    "url":"https://picsum.photos/id/1018/500/750"
+    "url":"https://picsum.photos/id/1018/500/750",
+    "id":"1018"
   },
   {
-    "id":"1019",
-    "url":"https://picsum.photos/id/1019/500/750"
+    "url":"https://picsum.photos/id/1019/500/750",
+    "id":"1019"
   },
   {
-    "id":"102",
-    "url":"https://picsum.photos/id/102/500/750"
+    "url":"https://picsum.photos/id/102/500/750",
+    "id":"102"
   },
   {
-    "id":"1020",
-    "url":"https://picsum.photos/id/1020/500/750"
+    "url":"https://picsum.photos/id/1020/500/750",
+    "id":"1020"
   },
   {
-    "id":"1021",
-    "url":"https://picsum.photos/id/1021/500/750"
+    "url":"https://picsum.photos/id/1021/500/750",
+    "id":"1021"
   },
   {
-    "id":"1022",
-    "url":"https://picsum.photos/id/1022/500/750"
+    "url":"https://picsum.photos/id/1022/500/750",
+    "id":"1022"
   },
   {
-    "id":"1023",
-    "url":"https://picsum.photos/id/1023/500/750"
+    "url":"https://picsum.photos/id/1023/500/750",
+    "styleId":"1023"
   },
   {
-    "id":"1024",
-    "url":"https://picsum.photos/id/1024/500/750"
+    "url":"https://picsum.photos/id/1024/500/750",
+    "styleId":"1024"
   },
   {
-    "id":"1025",
-    "url":"https://picsum.photos/id/1025/500/750"
+    "url":"https://picsum.photos/id/1025/500/750",
+    "styleId":"1025"
   }
 ]
+
+module.exports = {
+  smallImages,
+  mediumImages,
+  largeImages
+}

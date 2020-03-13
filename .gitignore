@@ -1,2 +1,4 @@
 node_modules
 notes
+.babelrc
+webpack.config.js
