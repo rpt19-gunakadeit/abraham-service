@@ -20,7 +20,7 @@ app.get('/id/smallUrl', (req, res) => {
     if (err) {
       console.log('err: ', err);
     } else {
-      res.send(imgData)
+      res.send(imgData);
     }
   })
 });
