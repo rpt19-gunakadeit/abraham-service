@@ -122,6 +122,26 @@ let smallImages = [
   {
     "url":"https://picsum.photos/id/1025/60/60",
     "styleId":"1025"
+  },
+  {
+    "url":"https://i.picsum.photos/id/582/60/60",
+    "styleId":"582"
+  },
+  {
+    "url":"https://picsum.photos/id/583/60/60",
+    "styleId":"583"
+  },
+  {
+    "url":"https://picsum.photos/id/584/60/60",
+    "styleId":"584"
+  },
+  {
+    "url":"https://picsum.photos/id/585/60/60",
+    "styleId":"585"
+  },
+  {
+    "url":"https://picsum.photos/id/586/60/60",
+    "styleId":"586"
   }
 ]
 
@@ -246,6 +266,26 @@ let mediumImages = [
   {
     "url":"https://picsum.photos/id/1025/350/500",
     "styleId":"1025"
+  },
+  {
+    "url":"https://i.picsum.photos/id/582/350/500",
+    "styleId":"582"
+  },
+  {
+    "url":"https://picsum.photos/id/583/350/500",
+    "styleId":"583"
+  },
+  {
+    "url":"https://picsum.photos/id/584/350/500",
+    "styleId":"584"
+  },
+  {
+    "url":"https://picsum.photos/id/585/350/500",
+    "styleId":"585"
+  },
+  {
+    "url":"https://picsum.photos/id/586/350/500",
+    "styleId":"586"
   }
 ]
 
@@ -369,6 +409,26 @@ let largeImages = [
   {
     "url":"https://picsum.photos/id/1025/500/750",
     "styleId":"1025"
+  },
+  {
+    "url":"https://i.picsum.photos/id/582/500/750",
+    "styleId":"582"
+  },
+  {
+    "url":"https://picsum.photos/id/583/500/750",
+    "styleId":"583"
+  },
+  {
+    "url":"https://picsum.photos/id/584/500/750",
+    "styleId":"584"
+  },
+  {
+    "url":"https://picsum.photos/id/585/500/750",
+    "styleId":"585"
+  },
+  {
+    "url":"https://picsum.photos/id/586/500/750",
+    "styleId":"586"
   }
 ]
 
