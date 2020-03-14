@@ -13,19 +13,31 @@ app.get('/', (req, res) => {
 });
 
 //get request to retrieve small images for thumbnails
-app.get('/small', (req, res) => {
-  res.status(200).send('OK');
+app.get('/id/smallUrl', (req, res) => {
+  db.getSmallImage((err, data) => {
+    let imgData = JSON.stringify(data);
+    // console.log('DATA: ', imgData)
+    if (err) {
+      console.log('err: ', err);
+    } else {
+      res.send(imgData)
+    }
+  })
 });
 
 //get request to retrieve medium images for static images rendering to dom
-app.get('/medium', (req, res) => {
+/*
+app.get('/id/mediumUrl', (req, res) => {
   res.status(200).send('OK');
 });
+*/
 
 //get request to retrieve large images when user clicks on medium size image
-app.get('/large', (req, res) => {
+/*
+app.get('/id/largeUrl', (req, res) => {
   res.status(200).send('OK');
 });
+*/
 
 app.listen(port, () => {
   console.log(`listening on port ${port}!`);

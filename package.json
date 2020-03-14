@@ -9,8 +9,9 @@
   },
   "scripts": {
     "server": "nodemon server/index.js",
-    "build": "webpack --config webpack.config.js",
-    "babel": "./node_modules/.bin/babel client/src --out-dir client/dist --presets @babel/preset-react --source-maps inline --watch"
+    "babel": "./node_modules/.bin/babel client/src --out-dir client/dist --presets @babel/preset-react --source-maps inline --watch",
+    "mysql": "mysql -u root -p",
+    "seed": "mysql -u root -p < schema.sql"
   },
   "dependencies": {
     "@babel/cli": "^7.8.4",
