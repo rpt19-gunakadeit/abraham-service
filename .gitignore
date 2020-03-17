@@ -3,3 +3,6 @@ notes
 .babelrc
 webpack.config.js
 client/dist
+
+# used to display sampleData images
+client/src/sampleImages.js
