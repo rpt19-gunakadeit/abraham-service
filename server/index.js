@@ -1,12 +1,9 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const bodyParser = require('body-parser');
 const db = require('../database/index');
 
 app.use(express.static('client/dist'))
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
   res.status(200).send('OK');
@@ -16,11 +13,12 @@ app.get('/', (req, res) => {
 app.get('/id/smallUrl', (req, res) => {
   db.getSmallImage((err, data) => {
     let imgData = JSON.stringify(data);
-    // console.log('DATA: ', imgData)
+    // console.log('image data: ', imgData)
     if (err) {
       console.log('err: ', err);
+      res.status(500).send()
     } else {
-      res.send(imgData);
+      res.status(200).send(imgData);
     }
   })
 });
