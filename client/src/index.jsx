@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 class ProductImages extends React.Component {
   constructor(props) {
