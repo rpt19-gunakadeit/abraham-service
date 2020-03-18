@@ -14,6 +14,9 @@ connection.connect((err) => {
 i want to make a query to the database to retireve smallImages data and use in callback fn
 i will use this fn inside my /id/thumbnail endpoint and provide Damien with: image url and product style id
 */
+
+//refactor fn name 'getImage'
+//refactor req to select url, styleId from table where styleId = (expected styleId?)
 let getSmallImage = function(callback) {
   let req = `SELECT * FROM small_images`;
   connection.query(req, (err, imgData) => {
