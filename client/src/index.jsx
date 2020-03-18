@@ -17,7 +17,7 @@ class ProductImages extends React.Component {
 
   displayImages() {
     $.ajax({
-      url: 'http://localhost:3000/id/smallUrl',
+      url: 'http://localhost:3000/:id/:url',
       method: 'GET',
       dataType: 'json',
       success: (data) => {
