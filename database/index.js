@@ -18,11 +18,13 @@ i will use this fn inside my /id/thumbnail endpoint and provide Damien with: ima
 //refactor fn name 'getImage'
 //refactor req to select url, styleId from table where styleId = (expected styleId?)
 let getSmallImage = function(callback) {
-  let req = `SELECT * FROM small_images where styleId = styleId`;
-  connection.query(req, (err, imgData) => {
-    if (err) {
+  let req = `SELECT * FROM small_images where styleId = ?`;
+  styleId = 34;
+  connection.query(req, styleId, (err, imgData) => {
+      if (err) {
       callback(err);
     } else {
+      console.log('IMG DATA: ', imgData)
       callback(null, imgData);
     }
   });

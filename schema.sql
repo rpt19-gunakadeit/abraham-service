@@ -419,40 +419,40 @@ insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/33
 insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/333/500/700", 31);
 
 insert into small_images(smallUrl, styleId) values ("https://picsum.photos/id/32/60/60", 32);
-insert into small_images(smallUrl, styleId) values ("https://picsum.photos/id/3044/60/60", 32);
-insert into small_images(smallUrl, styleId) values ("https://picsum.photos/id/3042/60/60", 32);
+insert into small_images(smallUrl, styleId) values ("https://picsum.photos/id/321/60/60", 32);
+insert into small_images(smallUrl, styleId) values ("https://picsum.photos/id/322/60/60", 32);
 
 insert into medium_images(mediumUrl, styleId) values ("https://picsum.photos/id/32/350/500", 32);
-insert into medium_images(mediumUrl, styleId) values ("https://picsum.photos/id/3044/350/500", 32);
-insert into medium_images(mediumUrl, styleId) values ("https://picsum.photos/id/3042/350/500", 32);
+insert into medium_images(mediumUrl, styleId) values ("https://picsum.photos/id/321/350/500", 32);
+insert into medium_images(mediumUrl, styleId) values ("https://picsum.photos/id/322/350/500", 32);
 
 insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/32/500/700", 32);
-insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/3044/500/700", 32);
-insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/3042/500/700", 32);
+insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/321/500/700", 32);
+insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/322/500/700", 32);
 
 insert into small_images(smallUrl, styleId) values ("https://picsum.photos/id/33/60/60", 33);
-insert into small_images(smallUrl, styleId) values ("https://picsum.photos/id/3333/60/60", 33);
-insert into small_images(smallUrl, styleId) values ("https://picsum.photos/id/3033/60/60", 33);
+insert into small_images(smallUrl, styleId) values ("https://picsum.photos/id/363/60/60", 33);
+insert into small_images(smallUrl, styleId) values ("https://picsum.photos/id/366/60/60", 33);
 
 insert into medium_images(mediumUrl, styleId) values ("https://picsum.photos/id/33/350/500", 33);
-insert into medium_images(mediumUrl, styleId) values ("https://picsum.photos/id/3333/350/500", 33);
-insert into medium_images(mediumUrl, styleId) values ("https://picsum.photos/id/3033/350/500", 33);
+insert into medium_images(mediumUrl, styleId) values ("https://picsum.photos/id/363/350/500", 33);
+insert into medium_images(mediumUrl, styleId) values ("https://picsum.photos/id/366/350/500", 33);
 
 insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/33/500/700", 33);
-insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/3333/500/700", 33);
-insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/3033/500/700", 33);
+insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/363/500/700", 33);
+insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/366/500/700", 33);
 
 insert into small_images(smallUrl, styleId) values ("https://picsum.photos/id/34/60/60", 34);
-insert into small_images(smallUrl, styleId) values ("https://picsum.photos/id/3400/60/60", 34);
-insert into small_images(smallUrl, styleId) values ("https://picsum.photos/id/3401/60/60", 34);
+insert into small_images(smallUrl, styleId) values ("https://picsum.photos/id/344/60/60", 34);
+insert into small_images(smallUrl, styleId) values ("https://picsum.photos/id/349/60/60", 34);
 
 insert into medium_images(mediumUrl, styleId) values ("https://picsum.photos/id/34/350/500", 34);
-insert into medium_images(mediumUrl, styleId) values ("https://picsum.photos/id/3400/350/500", 34);
-insert into medium_images(mediumUrl, styleId) values ("https://picsum.photos/id/3401/350/500", 34);
+insert into medium_images(mediumUrl, styleId) values ("https://picsum.photos/id/344/350/500", 34);
+insert into medium_images(mediumUrl, styleId) values ("https://picsum.photos/id/349/350/500", 34);
 
 insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/34/500/700", 34);
-insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/3400/500/700", 34);
-insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/3401/500/700", 34);
+insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/344/500/700", 34);
+insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/349/500/700", 34);
 
 insert into small_images(smallUrl, styleId) values ("https://picsum.photos/id/35/60/60", 35);
 insert into small_images(smallUrl, styleId) values ("https://picsum.photos/id/355/60/60", 35);

@@ -13,11 +13,9 @@ app.get('/', (req, res) => {
 Goal for Tue, Wk19D2:
   Rewrite .get() method to use req.params for /id/:url/:styleId
 */
-app.get('/:id/:url', (req, res) => {
+app.get('/:url-:styleId', (req, res) => {
   db.getSmallImage((err, data) => {
-    console.log('REQ.PARAMS: ',req.params)
     let imgData = JSON.stringify(data);
-    console.log('image data: ', imgData)
     if (err) {
       console.log('err: ', err);
       res.status(500).send()
