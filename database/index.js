@@ -24,7 +24,6 @@ let getSmallImage = function(callback) {
       if (err) {
       callback(err);
     } else {
-      console.log('IMG DATA: ', imgData)
       callback(null, imgData);
     }
   });

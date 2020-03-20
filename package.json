@@ -8,6 +8,7 @@
     "node": ">=6.13.0"
   },
   "scripts": {
+    "test": "jest",
     "server": "nodemon server/index.js",
     "config": "webpack -d --watch",
     "mysql": "mysql -u root -p",
@@ -25,6 +26,7 @@
     "path": "^0.12.7",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "supertest": "^4.0.2",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11"
   },

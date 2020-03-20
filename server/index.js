@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const db = require('../database/index');
+const request = require('supertest');
 
 app.use(express.static('client/dist'))
 
@@ -13,7 +14,9 @@ app.get('/', (req, res) => {
 Goal for Tue, Wk19D2:
   Rewrite .get() method to use req.params for /id/:url/:styleId
 */
-app.get('/:url-:styleId', (req, res) => {
+app.get('/t/:url-:styleId', (req, res) => {
+  console.log('params: ', req.params);
+  console.log('path: ', req.path)
   db.getSmallImage((err, data) => {
     let imgData = JSON.stringify(data);
     if (err) {
@@ -27,6 +30,19 @@ app.get('/:url-:styleId', (req, res) => {
 
 app.listen(port, () => {
   console.log(`listening on port ${port}!`);
+});
+
+//Supertest framework for unit testing
+request(app)
+.get('/t/:url-:styleId')
+.expect('Content-Type', 'text/html; charset=utf-8')
+.expect(200)
+.end((err, data) => {
+  if (err) {
+    throw err;
+  } else {
+    console.log('Test passes: ', data.text)
+  }
 })
 
 

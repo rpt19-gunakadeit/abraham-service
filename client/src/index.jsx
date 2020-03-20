@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
-let smallImages = require('./sampleImages.js').smallImages;
 
 class ProductImages extends React.Component {
   constructor(props) {
@@ -17,7 +16,7 @@ class ProductImages extends React.Component {
 
   displayImages() {
     $.ajax({
-      url: 'http://localhost:3000/:url-:styleId',
+      url: 'http://localhost:3000/t/:url-:styleId',
       method: 'GET',
       dataType: 'json',
       success: (data) => {
