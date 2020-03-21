@@ -6,7 +6,8 @@ class ProductImages extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      defaultImages: []
+      defaultImages: [],
+      largeImages: []
     }
   }
 
@@ -16,10 +17,12 @@ class ProductImages extends React.Component {
 
   displayImages() {
     $.ajax({
-      url: 'http://localhost:3000/t/:url-:styleId',
+      //retrieve medium sized images
+      url: 'http://localhost:3000/t/mediumUrl-:styleId',
       method: 'GET',
       dataType: 'json',
       success: (data) => {
+        console.log('data: ', data)
         this.setState({
           defaultImages: data
         })
@@ -32,12 +35,15 @@ class ProductImages extends React.Component {
 
   render() {
     let images = this.state.defaultImages;
-    console.log('images: ', images)
     return (
-      <div>
-        <h1>Render Images</h1>
+      <div className="defaultDisplay">
+        <h1 className="pageTitle">Nike</h1>
         {images.map(img => (
-          <img key={img.styleId} src={img.smallUrl} />
+          <img
+          className="defaultSize"
+          key={img.id}
+          src={img.mediumUrl}
+          />
         ))}
       </div>
     )

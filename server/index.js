@@ -10,23 +10,32 @@ app.get('/', (req, res) => {
   res.status(200).send('OK');
 });
 
-/*
-Goal for Tue, Wk19D2:
-  Rewrite .get() method to use req.params for /id/:url/:styleId
-*/
-app.get('/t/:url-:styleId', (req, res) => {
+app.get('/t/smallUrl-:styleId', (req, res) => {
   console.log('params: ', req.params);
   console.log('path: ', req.path)
   db.getSmallImage((err, data) => {
     let imgData = JSON.stringify(data);
     if (err) {
       console.log('err: ', err);
-      res.status(500).send()
+      res.status(500).send('Error')
     } else {
       res.status(200).send(imgData);
     }
   })
 });
+
+app.get('/t/mediumUrl-:styleId', (req, res) => {
+  console.log(req.params)
+  db.getMediumImage((err, data) => {
+    let imgData = JSON.stringify(data);
+    if (err) {
+      console.log('Error: ', err);
+      res.status(500).send('Error');
+    } else {
+      res.status(200).send(imgData);
+    }
+  })
+})
 
 app.listen(port, () => {
   console.log(`listening on port ${port}!`);
@@ -34,7 +43,7 @@ app.listen(port, () => {
 
 //Supertest framework for unit testing
 request(app)
-.get('/t/:url-:styleId')
+.get('/t/smallUrl-:styleId')
 .expect('Content-Type', 'text/html; charset=utf-8')
 .expect(200)
 .end((err, data) => {
@@ -43,8 +52,18 @@ request(app)
   } else {
     console.log('Test passes: ', data.text)
   }
-})
-
+});
+request(app)
+.get('/t/mediumUrl-:styleId')
+.expect('Content-Type', 'text/html; charset=utf-8')
+.expect(200)
+.end((err, data) => {
+  if (err) {
+    throw err;
+  } else {
+    console.log('Test passes: ', data.text)
+  }
+});
 
 /*
 SAMPLE DATA FROM SUCCESSFUL API CALL
