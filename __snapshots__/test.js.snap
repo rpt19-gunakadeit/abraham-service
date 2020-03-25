@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Correctly render <ProductImages/> 1`] = `
+<div
+  className="defaultDisplay"
+>
+  <h1
+    className="pageTitle"
+  >
+    Nike
+  </h1>
+</div>
+`;

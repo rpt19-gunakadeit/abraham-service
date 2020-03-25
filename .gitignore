@@ -6,3 +6,4 @@ client/dist/
 
 # used to display sampleData images
 client/src/sampleImages.js
+ProductDisplay.react.test.js
