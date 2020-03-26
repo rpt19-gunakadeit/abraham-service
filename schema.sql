@@ -465,3 +465,25 @@ insert into medium_images(mediumUrl, styleId) values ("https://picsum.photos/id/
 insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/35/500/700", 35);
 insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/355/500/700", 35);
 insert into large_images(largeUrl, styleId) values ("https://picsum.photos/id/356/500/700", 35);
+
+
+insert into small_images(smallUrl, styleId) values ("http://tiny.cc/r7lxlz", 36);
+insert into small_images(smallUrl, styleId) values ("http://tiny.cc/gkmxlz", 36);
+insert into small_images(smallUrl, styleId) values ("http://tiny.cc/flmxlz", 36);
+insert into small_images(smallUrl, styleId) values ("http://tiny.cc/komxlz", 36);
+insert into small_images(smallUrl, styleId) values ("http://tiny.cc/gpmxlz", 36);
+insert into small_images(smallUrl, styleId) values ("http://tiny.cc/hqmxlz", 36);
+
+insert into medium_images(mediumUrl, styleId) values ("http://tiny.cc/r7lxlz", 36);
+insert into medium_images(mediumUrl, styleId) values ("http://tiny.cc/gkmxlz", 36);
+insert into medium_images(mediumUrl, styleId) values ("http://tiny.cc/flmxlz", 36);
+insert into medium_images(mediumUrl, styleId) values ("http://tiny.cc/komxlz", 36);
+insert into medium_images(mediumUrl, styleId) values ("http://tiny.cc/gpmxlz", 36);
+insert into medium_images(mediumUrl, styleId) values ("http://tiny.cc/hqmxlz", 36);
+
+insert into large_images(largeUrl, styleId) values ("http://tiny.cc/r7lxlz", 36);
+insert into large_images(largeUrl, styleId) values ("http://tiny.cc/gkmxlz", 36);
+insert into large_images(largeUrl, styleId) values ("http://tiny.cc/flmxlz", 36);
+insert into large_images(largeUrl, styleId) values ("http://tiny.cc/komxlz", 36);
+insert into large_images(largeUrl, styleId) values ("http://tiny.cc/gpmxlz", 36);
+insert into large_images(largeUrl, styleId) values ("http://tiny.cc/hqmxlz", 36);

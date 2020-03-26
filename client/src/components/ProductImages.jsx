@@ -15,12 +15,12 @@ class ProductImages extends React.Component {
   }
 
   displayImages() {
-    let params = (new URL(document.location)).searchParams;
-    let styleId = params.get('styleId');
+    let params = new URL(window.location.href)
+    let styleId = params.searchParams.get('');
     console.log('client styleId: ', styleId)
     $.ajax({
       //retrieve medium sized images
-      url: `http://localhost:3000/t/mediumUrl-:${styleId}`,
+      url: `http://localhost:3000/:${styleId}`,
       method: 'GET',
       dataType: 'json',
       success: (data) => {
