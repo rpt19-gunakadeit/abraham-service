@@ -17,7 +17,7 @@ class ProductImages extends React.Component {
   displayImages() {
     let params = new URL(window.location.href)
     let styleId = params.searchParams.get('');
-    console.log('client styleId: ', styleId)
+    // console.log('client styleId: ', styleId)
     $.ajax({
       //retrieve medium sized images
       url: `http://localhost:3000/:${styleId}`,
@@ -44,6 +44,7 @@ class ProductImages extends React.Component {
           <img
           className="defaultSize"
           key={img.id}
+          value={img.styleId}
           src={img.mediumUrl}
           />
         ))}

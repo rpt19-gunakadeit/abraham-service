@@ -12,9 +12,9 @@ connection.connect((err) => {
 });
 
 let getSmallImage = function(callback) {
-  let selectQry = `SELECT * FROM small_images where styleId = ?`;
-  styleId = 34;
-  connection.query(selectQry, styleId, (err, imgData) => {
+  let selectQry = `SELECT * FROM small_images where styleId = 36`;
+  // styleId = 36;
+  connection.query(selectQry, (err, imgData) => {
       if (err) {
       callback(err);
     } else {
@@ -23,10 +23,10 @@ let getSmallImage = function(callback) {
   });
 }
 
-let getMediumImage = (callback) => {
-  let selectQry = `select * from medium_images where styleId = ?`;
-  styleId = 24;
-  connection.query(selectQry, styleId, (err, imgData) => {
+let getMediumImage = (styleId, callback) => {
+  let selectQry = `select * from medium_images where styleId = 36`;
+  styleId = 36;
+  connection.query(selectQry, (err, imgData) => {
     if (err) {
       callback(err);
     } else {

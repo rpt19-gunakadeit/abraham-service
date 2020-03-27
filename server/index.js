@@ -11,8 +11,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/t/smallUrl-:styleId', (req, res) => {
-  console.log('params: ', req.params);
-  console.log('path: ', req.path)
+  // console.log('params: ', req.params);
+  // console.log('path: ', req.path)
   db.getSmallImage((err, data) => {
     let imgData = JSON.stringify(data);
     if (err) {
@@ -24,9 +24,10 @@ app.get('/t/smallUrl-:styleId', (req, res) => {
   })
 });
 
-app.get('/t/mediumUrl-:styleId', (req, res) => {
-  console.log(req.params)
-  db.getMediumImage((err, data) => {
+app.get('/:styleId', (req, res) => {
+  // console.log('req.params.styleId:', req.params.styleId)
+  let styleId = req.params.styleId;
+  db.getMediumImage(styleId, (err, data) => {
     let imgData = JSON.stringify(data);
     if (err) {
       console.log('Error: ', err);
@@ -54,7 +55,7 @@ request(app)
   }
 });
 request(app)
-.get('/t/mediumUrl-:styleId')
+.get('/:styleId')
 .expect('Content-Type', 'text/html; charset=utf-8')
 .expect(200)
 .end((err, data) => {
