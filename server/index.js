@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
   res.status(200).send('OK');
 });
 
-app.get('/t/smallUrl-:styleId', (req, res) => {
+app.get('/t/:styleId', (req, res) => {
   // console.log('params: ', req.params);
   // console.log('path: ', req.path)
   db.getSmallImage((err, data) => {
@@ -44,14 +44,14 @@ app.listen(port, () => {
 
 //Supertest framework for unit testing
 request(app)
-.get('/t/smallUrl-:styleId')
+.get('/t/:styleId')
 .expect('Content-Type', 'text/html; charset=utf-8')
 .expect(200)
 .end((err, data) => {
   if (err) {
     throw err;
   } else {
-    console.log('Test passes: ', data.text)
+    console.log('Thumbnail test: ', data.text)
   }
 });
 request(app)
@@ -62,7 +62,7 @@ request(app)
   if (err) {
     throw err;
   } else {
-    console.log('Test passes: ', data.text)
+    console.log('Default test: ', data.text)
   }
 });
 
