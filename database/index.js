@@ -11,9 +11,8 @@ connection.connect((err) => {
   else console.log('DB connected!');
 });
 
-let getSmallImage = function(callback) {
-  let selectQry = `SELECT * FROM small_images where styleId = 36`;
-  // styleId = 36;
+let getSmallImage = function(styleId, callback) {
+  let selectQry = `SELECT * FROM small_images where styleId = ${styleId}`;
   connection.query(selectQry, (err, imgData) => {
       if (err) {
       callback(err);
@@ -24,8 +23,8 @@ let getSmallImage = function(callback) {
 }
 
 let getMediumImage = (styleId, callback) => {
-  let selectQry = `select * from medium_images where styleId = 36`;
-  styleId = 36;
+  console.log('styleId: ', styleId)
+    let selectQry = `select * from medium_images where styleId = ${styleId}`;
   connection.query(selectQry, (err, imgData) => {
     if (err) {
       callback(err);

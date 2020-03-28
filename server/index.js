@@ -10,10 +10,10 @@ app.get('/', (req, res) => {
   res.status(200).send('OK');
 });
 
+//endpoint for damien
 app.get('/t/:styleId', (req, res) => {
-  // console.log('params: ', req.params);
-  // console.log('path: ', req.path)
-  db.getSmallImage((err, data) => {
+  let styleId = req.params.styleId;
+  db.getSmallImage(styleId, (err, data) => {
     let imgData = JSON.stringify(data);
     if (err) {
       console.log('err: ', err);
@@ -24,9 +24,10 @@ app.get('/t/:styleId', (req, res) => {
   })
 });
 
+//endpoint for default images
 app.get('/:styleId', (req, res) => {
-  // console.log('req.params.styleId:', req.params.styleId)
   let styleId = req.params.styleId;
+  console.log('styleId SERVER:', styleId)
   db.getMediumImage(styleId, (err, data) => {
     let imgData = JSON.stringify(data);
     if (err) {
@@ -42,29 +43,29 @@ app.listen(port, () => {
   console.log(`listening on port ${port}!`);
 });
 
-//Supertest framework for unit testing
-request(app)
-.get('/t/:styleId')
-.expect('Content-Type', 'text/html; charset=utf-8')
-.expect(200)
-.end((err, data) => {
-  if (err) {
-    throw err;
-  } else {
-    console.log('Thumbnail test: ', data.text)
-  }
-});
-request(app)
-.get('/:styleId')
-.expect('Content-Type', 'text/html; charset=utf-8')
-.expect(200)
-.end((err, data) => {
-  if (err) {
-    throw err;
-  } else {
-    console.log('Default test: ', data.text)
-  }
-});
+/*Supertest framework for unit testing*/
+// request(app)
+// .get('/t/:styleId')
+// .expect('Content-Type', 'text/html; charset=utf-8')
+// .expect(200)
+// .end((err, data) => {
+//   if (err) {
+//     throw err;
+//   } else {
+//     console.log('Thumbnail test: ', data.text)
+//   }
+// });
+// request(app)
+// .get('/:styleId')
+// .expect('Content-Type', 'text/html; charset=utf-8')
+// .expect(200)
+// .end((err, data) => {
+//   if (err) {
+//     throw err;
+//   } else {
+//     console.log('Default test: ', data.text)
+//   }
+// });
 
 /*
 SAMPLE DATA FROM SUCCESSFUL API CALL
