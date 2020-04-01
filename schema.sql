@@ -3,7 +3,7 @@
  *    mysql -u root -p < schema.sql
  *  to create the database and the tables.*/
 
- DROP DATABASE product_images;
+ DROP DATABASE IF EXISTS product_images;
 
  CREATE DATABASE product_images;
 
