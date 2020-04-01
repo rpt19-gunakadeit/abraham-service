@@ -1,7 +1,6 @@
 node_modules
 notes
 .babelrc
-webpack.config.js
 client/dist/
 
 # used to display sampleData images
