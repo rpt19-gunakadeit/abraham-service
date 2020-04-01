@@ -11,7 +11,7 @@ connection.connect((err) => {
   else console.log('DB connected!');
 });
 
-let getSmallImage = function(styleId, callback) {
+let getSmallImage = function(callback) {
   let selectQry = `SELECT * FROM small_images where styleId = ${styleId}`;
   connection.query(selectQry, (err, imgData) => {
       if (err) {
@@ -22,9 +22,9 @@ let getSmallImage = function(styleId, callback) {
   });
 }
 
-let getMediumImage = (styleId, callback) => {
-  console.log('styleId: ', styleId)
-    let selectQry = `select * from medium_images where styleId = ${styleId}`;
+let getMediumImage = (callback) => {
+  // console.log('styleId: ', styleId)
+    let selectQry = `select * from medium_images where styleId = 7`;
   connection.query(selectQry, (err, imgData) => {
     if (err) {
       callback(err);
@@ -33,6 +33,18 @@ let getMediumImage = (styleId, callback) => {
     }
   })
 }
+  /* need to use to render based on styleId */
+// let getMediumImage = (styleId, callback) => {
+//   console.log('styleId: ', styleId)
+//     let selectQry = `select * from medium_images where styleId = ${styleId}`;
+//   connection.query(selectQry, (err, imgData) => {
+//     if (err) {
+//       callback(err);
+//     } else {
+//       callback(null, imgData);
+//     }
+//   })
+// }
 
 module.exports = {
   getSmallImage,

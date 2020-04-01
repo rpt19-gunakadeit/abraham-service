@@ -3,7 +3,17 @@ const app = express();
 const port = 3000;
 const db = require('../database/index');
 const request = require('supertest');
+const path = require('path');
+const cors = require('cors')
 
+let options = {
+  root: path.join(__dirname, 'client'),
+  headers: {
+    'Content-Type': 'image/png'
+  }
+}
+
+app.use(cors())
 app.use(express.static('client/dist'))
 
 app.get('/', (req, res) => {
@@ -26,9 +36,8 @@ app.get('/t/:styleId', (req, res) => {
 
 //endpoint for default images
 app.get('/:styleId', (req, res) => {
-  let styleId = req.params.styleId;
-  console.log('styleId SERVER:', styleId)
-  db.getMediumImage(styleId, (err, data) => {
+  //render default iamges
+  db.getMediumImage((err, data) => {
     let imgData = JSON.stringify(data);
     if (err) {
       console.log('Error: ', err);
@@ -37,6 +46,16 @@ app.get('/:styleId', (req, res) => {
       res.status(200).send(imgData);
     }
   })
+      /* need to use to render images based on styleId */
+  // db.getMediumImage(styleId, (err, data) => {
+  //   let imgData = JSON.stringify(data);
+  //   if (err) {
+  //     console.log('Error: ', err);
+  //     res.status(500).send('Error');
+  //   } else {
+  //     res.status(200).send(imgData);
+  //   }
+  // })
 })
 
 app.listen(port, () => {
