@@ -1,7 +1,9 @@
 node_modules
 notes
 .babelrc
-client/dist/
+client/dist/bundle.js
+client/dist/index.js
+
 
 # used to display sampleData images
 client/src/sampleImages.js
