@@ -24,7 +24,7 @@ let getSmallImage = function(callback) {
 
 let getMediumImage = (callback) => {
   // console.log('styleId: ', styleId)
-    let selectQry = `select * from medium_images where styleId = 7`;
+    let selectQry = `select * from medium_images where styleId = 36`;
   connection.query(selectQry, (err, imgData) => {
     if (err) {
       callback(err);
