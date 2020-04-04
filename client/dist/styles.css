@@ -1,10 +1,14 @@
 .pageTitle {
   text-align: center;
 }
+
 .defaultSize {
-  display: grid -moz-inline-grid;
-  width: 25%;
-  height: 50%;
-  padding: 3px;
-  padding-left: 3px;
+  display: inline-block;
+  width: 463px;
+  height: 578px;
+  padding-left: 12px;
+  padding-bottom: 4px;
+  /* margin: 44px -8px 0px 4px; */
+  /* padding: 0px 48px 0px 44px; */
+  gap: normal;
 }
