@@ -14,7 +14,7 @@ let options = {
 }
 
 app.use(cors())
-app.use(express.static('client/dist'))
+app.use(express.static('client/dist/'))
 
 app.get('/', (req, res) => {
   res.status(200).send('OK');
