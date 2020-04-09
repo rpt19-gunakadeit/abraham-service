@@ -1,23 +1,30 @@
 import React from 'react';
 import $ from 'jquery';
+import ImageModal from './ImageModal.jsx';
 
 class ProductImages extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       defaultImages: [],
-      largeImages: []
+      show: false
     }
+    this.toggleModal = this.toggleModal.bind(this);
   }
 
   componentDidMount() {
     this.displayImages();
   }
 
+  toggleModal() {
+    this.setState({
+      show: !this.state.show
+    })
+  }
+
   displayImages() {
     let params = new URL(window.location.href)
     let styleId = params.searchParams.get('');
-    // console.log('client styleId: ', styleId)
     $.ajax({
       //retrieve medium sized images
       url: `http://localhost:3000/:${styleId}`,
@@ -36,11 +43,11 @@ class ProductImages extends React.Component {
   }
 
   render() {
-    let images = this.state.defaultImages;
+    let { defaultImages, show } = this.state;
     return (
       <div className="defaultDisplay">
         <h1 className="pageTitle">Nike</h1>
-        {images.map(img => (
+        {defaultImages.map(img => (
           <img
           className="defaultSize"
           key={img.id}
@@ -48,6 +55,7 @@ class ProductImages extends React.Component {
           src={img.mediumUrl}
           />
         ))}
+        <ImageModal images={defaultImages} handleModal={this.toggleModal} show={show} />
       </div>
     )
   }
