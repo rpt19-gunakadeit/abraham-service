@@ -53,6 +53,7 @@ class ProductImages extends React.Component {
           key={img.id}
           value={img.styleId}
           src={img.mediumUrl}
+          onClick={this.toggleModal}
           />
         ))}
         <ImageModal images={defaultImages} handleModal={this.toggleModal} show={show} />
