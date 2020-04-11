@@ -7,7 +7,8 @@ class ProductImages extends React.Component {
     super(props);
     this.state = {
       defaultImages: [],
-      show: false
+      show: false,
+      modalView: [] //i want to use this key to trigger the view of images to a modal state onClick
     }
     this.toggleModal = this.toggleModal.bind(this);
   }
@@ -22,6 +23,15 @@ class ProductImages extends React.Component {
     })
   }
 
+  // handleClose = () => {
+  //   console.log('click in close')
+  //   this.setState({ show: false })
+  // }
+  // handleShow = () => {
+  //   console.log('click in show')
+  //   this.setState({ show: true })
+  // }
+
   displayImages() {
     let params = new URL(window.location.href)
     let styleId = params.searchParams.get('');
@@ -33,7 +43,8 @@ class ProductImages extends React.Component {
       success: (data) => {
         console.log('data: ', data)
         this.setState({
-          defaultImages: data
+          defaultImages: data,
+          modalView: data
         })
       },
       error: (err) => {
@@ -43,20 +54,22 @@ class ProductImages extends React.Component {
   }
 
   render() {
-    let { defaultImages, show } = this.state;
+    let { defaultImages, show, modalView } = this.state;
+    // console.log('modalView: ', modalView);
     return (
       <div className="defaultDisplay">
         <h1 className="pageTitle">Nike</h1>
         {defaultImages.map(img => (
           <img
           className="defaultSize"
+          // id="modal"
           key={img.id}
           value={img.styleId}
           src={img.mediumUrl}
           onClick={this.toggleModal}
           />
         ))}
-        <ImageModal images={defaultImages} handleModal={this.toggleModal} show={show} />
+        <ImageModal images={modalView} show={show} handleModal={this.toggleModal} />
       </div>
     )
   }
