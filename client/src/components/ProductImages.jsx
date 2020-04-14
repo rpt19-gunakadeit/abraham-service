@@ -1,6 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
-import ImageModal from './ImageModal.jsx';
+// import ImageModal from './ImageModal.jsx';
 
 class ProductImages extends React.Component {
   constructor(props) {
@@ -69,7 +69,7 @@ class ProductImages extends React.Component {
           onClick={this.toggleModal}
           />
         ))}
-        <ImageModal images={modalView} show={show} handleModal={this.toggleModal} />
+        {/* <ImageModal images={modalView} show={show} handleModal={this.toggleModal} /> */}
       </div>
     )
   }

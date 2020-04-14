@@ -16,7 +16,7 @@ const ImageModal = ({handleModal, show, images}) => {
       <div className='modal-content'>
         {/* close button to close modald */}
         <span className='close' onClick={handleModal}>&times;</span>
-        <h1>MODAL TEXT</h1>
+        {/* <h1>MODAL TEXT</h1>
         <h2>IMAGE SHOULD RENDER BUT IS NOT FOR SOME REASON</h2>
 
         {images.map(img => {
@@ -25,7 +25,7 @@ const ImageModal = ({handleModal, show, images}) => {
             src={img.mediumUrl}
             onClick={handleModal}
             />
-          })}
+          })} */}
 
         </div>
     </div>
