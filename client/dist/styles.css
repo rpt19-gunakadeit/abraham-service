@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.defaultSize {
+img.defaultSize {
   display: inline-block;
   width: 463px;
   height: 578px;
@@ -12,7 +12,7 @@
   /* padding: 0px 48px 0px 44px; */
   gap: normal;
 }
-
+/*
 #modal, .img-modal {
   position: fixed;
   top: 50%;
@@ -24,14 +24,13 @@
   max-height: 100%;
   z-index: 100;
   background-color: rgb(0,0,0,0.5);
-  /* backgroun
-  d-image: url('http://tiny.cc/r7lxlz'); */
-}
+} */
+
 h1, h2 {
   color: white;
 }
 
-.modal-content {
+img.modal-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -41,7 +40,7 @@ h1, h2 {
   overflow: auto;
 }
 
-.modalImg {
+img.modalImg {
   position: fixed;
   display: block;
   width: 550px;
@@ -50,17 +49,17 @@ h1, h2 {
   left: 50%;
 }
 
-.text {
+/* .text {
   color: white;
   size: 36px;
-}
+} */
 
 .modal-images {
   position: fixed;
   /* background-color: rgb(0,0,0,0.4); */
 }
 
-.close {
+span.close {
   color: white;
   padding-left: 95%;
 }
