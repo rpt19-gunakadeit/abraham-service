@@ -1,6 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
-import '../style.css'
+import './styles.css'
 // import ImageModal from './ImageModal.jsx';
 
 class ProductImages extends React.Component {
