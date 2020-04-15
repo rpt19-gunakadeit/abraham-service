@@ -19,7 +19,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        presets: ['style-laoder', 'css-loader']
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
