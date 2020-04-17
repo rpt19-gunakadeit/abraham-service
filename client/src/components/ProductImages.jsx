@@ -24,15 +24,6 @@ class ProductImages extends React.Component {
     })
   }
 
-  // handleClose = () => {
-  //   console.log('click in close')
-  //   this.setState({ show: false })
-  // }
-  // handleShow = () => {
-  //   console.log('click in show')
-  //   this.setState({ show: true })
-  // }
-
   displayImages() {
     let params = new URL(window.location.href)
     let styleId = params.searchParams.get('');
