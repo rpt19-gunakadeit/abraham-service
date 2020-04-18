@@ -49,17 +49,24 @@ class ProductImages extends React.Component {
     // console.log('modalView: ', modalView);
     return (
       <div className="defaultDisplay">
-        <h1 className="pageTitle">Nike</h1>
-        {defaultImages.map(img => (
+        <div className="nav">
           <img
-          className="defaultSize"
-          // id="modal"
-          key={img.id}
-          value={img.styleId}
-          src={img.mediumUrl}
-          onClick={this.toggleModal}
+          src="https://miro.medium.com/max/3360/1*OUhIm3AKJlbrFrxdS-7E6Q.png"
+          className="navbar"
           />
-        ))}
+        </div>
+          <div className='imageBody'>
+          {defaultImages.map(img => (
+            <img
+            className="defaultSize"
+            // id="modal"
+            key={img.id}
+            value={img.styleId}
+            src={img.mediumUrl}
+            onClick={this.toggleModal}
+            />
+          ))}
+          </div>
         {/* <ImageModal images={modalView} show={show} handleModal={this.toggleModal} /> */}
       </div>
     )
