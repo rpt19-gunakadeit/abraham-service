@@ -19,8 +19,14 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: ['style-loader', 'css-loader']
+        loader: ['style-loader', 'css-loader'],
+        resolve: {
+          extensions: ['', '.js', '.jsx', '.css'],
+          modulesDirectories: [
+            'node_modules'
+          ]
       }
+      },
     ]
   },
   watch: true, //actively watches for changes
