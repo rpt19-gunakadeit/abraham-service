@@ -2,13 +2,17 @@
   text-align: center;
 }
 
+.navbar {
+  width: 100%;
+  max-width: 100%;
+}
+
 img.defaultSize {
   display: inline-block;
   width: 463px;
   height: 578px;
   padding-left: 12px;
   padding-bottom: 4px;
-
 }
 /*
 #modal, .img-modal {
@@ -25,7 +29,7 @@ img.defaultSize {
 } */
 
 h1, h2 {
-  color: white;
+  color: black;
 }
 
 img.modal-content {
