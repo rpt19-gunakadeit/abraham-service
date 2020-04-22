@@ -3,6 +3,7 @@ notes
 .babelrc
 client/dist/bundle.js
 client/dist/index.js
+aws-keys.js
 
 
 # used to display sampleData images
