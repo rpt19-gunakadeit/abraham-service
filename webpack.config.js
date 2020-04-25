@@ -5,7 +5,7 @@ let dist = path.join(__dirname, '/client/dist');
 module.exports = {
   entry: `${src}/index.jsx`,
   output: {
-    filename: 'bundle.js',
+    filename: 'productimages.bundle.js',
     path: dist
   },
   module: {
