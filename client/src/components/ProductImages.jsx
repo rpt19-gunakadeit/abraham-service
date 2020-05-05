@@ -1,14 +1,10 @@
-import React from 'react';
-import $ from 'jquery';
 import './ProductImages.css'
 
 class ProductImages extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      defaultImages: [],
-      show: false,
-      modalView: [] //i want to use this key to trigger the view of images to a modal state onClick
+      defaultImages: []
     }
     this.toggleModal = this.toggleModal.bind(this);
   }
@@ -24,13 +20,18 @@ class ProductImages extends React.Component {
   }
 
   displayImages() {
-    let params = new URL(window.location.href)
-    let styleId = params.searchParams.get('');
+    let url = window.location.href.split('/');
+    let styleId = url[url.length - 2];
+    let data = {
+      id: styleId
+    }
+    console.log(styleId);
     $.ajax({
       //retrieve medium sized images
-      url: `http://localhost:3000/:${styleId}`, 
+      url: `http://localhost:3000/t`,
       method: 'GET',
       dataType: 'json',
+      data: data,
       success: (data) => {
         console.log('data: ', data)
         this.setState({
@@ -45,8 +46,7 @@ class ProductImages extends React.Component {
   }
 
   render() {
-    let { defaultImages, show, modalView } = this.state;
-    // console.log('modalView: ', modalView);
+    let { defaultImages } = this.state;
     return (
       <div className="defaultDisplay">
         <div className="nav">
@@ -59,15 +59,13 @@ class ProductImages extends React.Component {
           {defaultImages.map(img => (
             <img
             className="defaultSize"
-            // id="modal"
             key={img.id}
             value={img.styleId}
-            src={img.mediumUrl}
+            src={img.url}
             onClick={this.toggleModal}
             />
           ))}
           </div>
-        {/* <ImageModal images={modalView} show={show} handleModal={this.toggleModal} /> */}
       </div>
     )
   }

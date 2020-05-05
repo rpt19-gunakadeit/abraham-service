@@ -1,4 +1,3 @@
-import React from 'react';
 //destructured props to specific prop I want to use
 const ImageModal = ({handleModal, show, images}) => {
   let hideShowModal = show ? 'modal display-block' : 'modal display-none';
