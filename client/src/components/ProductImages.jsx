@@ -20,8 +20,9 @@ class ProductImages extends React.Component {
   }
 
   displayImages() {
-    let url = window.location.href.split('/');
-    let styleId = url[url.length - 2];
+    let url = window.location.href.split('=');
+    let styleId = url[1];
+    console.log("styleId: ", styleId);
     let data = {
       id: styleId
     }
@@ -49,12 +50,6 @@ class ProductImages extends React.Component {
     let { defaultImages } = this.state;
     return (
       <div className="defaultDisplay">
-        <div className="nav">
-          <img
-          src="https://miro.medium.com/max/3360/1*OUhIm3AKJlbrFrxdS-7E6Q.png"
-          className="navbar"
-          />
-        </div>
           <div className='imageBody'>
           {defaultImages.map(img => (
             <img
